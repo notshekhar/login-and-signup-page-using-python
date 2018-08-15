@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for("static", filename="note.css")}}">
+    <title>welcome to note+</title>
+    <script src="{{url_for("static", filename="math.js")}}" charset="utf-8"></script>
+    <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("{{url_for("static", filename="sw.js")}}").then(function () {
+        console.log('Service worker successfully registered');
+      }).catch(function (err) {
+        console.error('Service worker failed to register', err);
+      });
+    } else {
+      console.log('Service workers not supported');
+    }
+    </script>
+  </head>
+  <body>
+    <div id='header'>
+      <span id='one'>one</span><span id='million'>million</span>
+    </div>
+    <div id="message">hey</div>
+    <br><br><br>
+    <form id="form">
+      <center>
+      <input type="text" id="user" value="" placeholder="username"><br>
+      <input type="password" id='password' value="" placeholder="Password"><br>
+      <button type="button" id="login">login</button>
+      <br>
+      <br>
+      <span>or </span><a id='signu'>Create new account</a>
+    </center>
+    </form>
+
+    <form id="sign">
+      <center>
+        <input type="text" id="susername" placeholder="username" name="" value=""><br>
+        <input type="password" id='spassword' placeholder="password" name="" value=""><br>
+        <input type="email" id='semail' placeholder="email" name="" value=""><br>
+        <button type="button" id="signup" name="button">Sign up</button>
+        <br>
+        <br>
+        <span>Already have a account </span><a id='log'>Login</a>
+      <center>
+    </form>
+    <script type="text/javascript" src="{{url_for("static", filename="note.js")}}"></script>
+  </body>
+</html>

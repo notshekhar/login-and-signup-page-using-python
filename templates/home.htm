@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>welcome {{un}}</title>
+    <script src="{{url_for("static", filename="math.js")}}" charset="utf-8"></script>
+    <link rel="stylesheet" href="{{url_for("static", filename="home.css")}}">
+  </head>
+  <body>
+    <div id='header'>
+      <span id="user">Hi, {{un}}!</span>
+      <div id="all">
+        <div id="menu">
+          
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      your email: {{email}}<br>
+      <a id='logout'><img id='logicon' src="{{url_for("static", filename="logout.svg")}}">
+        <span id="log">logout</span>
+      </a>
+
+    </div>
+    <script type="text/javascript" src="{{url_for("static", filename="home.js")}}"></script>
+  </body>
+</html>
