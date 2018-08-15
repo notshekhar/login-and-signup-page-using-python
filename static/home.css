@@ -1,0 +1,43 @@
+@font-face {
+  font-family: flurr;
+  src: url(flurr.ttf);
+}
+body{
+  font-family: flurr, sans-serif;
+}
+#logout{
+  cursor: pointer;
+  color: grey;
+  display: flex;
+  position: relative;
+}
+#logicon{
+  height: 20px;
+}
+#log{
+  padding-left: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+#header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background: blue;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#user{
+  position: absolute;
+  color: white;
+  right: 20px;
+  top: 50%;
+  height: 20px;
+  margin-top: -10px;
+}
+#body{
+  margin-top: 60px;
+}

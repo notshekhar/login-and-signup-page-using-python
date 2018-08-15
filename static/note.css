@@ -1,0 +1,86 @@
+@font-face {
+  font-family: flurr;
+  src: url(flurr.ttf);
+}
+#message{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  font-family: flurr, sans-serif;
+  color: white;
+  background: red;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+#header{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  font-family: flurr, sans-serif;
+  background: linear-gradient(to right, blue , #00abff);
+  padding-top: 10px;
+  text-align: center;
+}
+#one{
+  color: white;
+}
+
+#sign{
+  display: none;
+
+}
+input{
+  height: 40px;
+  width: 500px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  border-radius: 100px;
+  margin-top: 10px;
+  font-family: flurr, sans-serif;
+  font-size: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+button{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 500px;
+  margin-top: 10px;
+  border-radius: 100px;
+  background: blue;
+  height: 45px;
+  font-family: flurr, sans-serif;
+  font-size: 15px;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+button:hover{
+  border: solid;
+  border-width: 2px;
+  color: blue;
+  background: white;
+  border-color: blue;
+}
+span{
+  font-family: flurr, sans-serif;
+}
+a{
+  font-family: flurr,sans-serif;
+  color: blue;
+}
+
+@media (max-width: 604px) {
+  input{
+    width: 85%;
+  }
+  button{
+    width: 85%;
+  }
+}
